@@ -1,0 +1,435 @@
+@import "compass/reset";
+@import "compass/css3/flexbox";
+
+$bgcolor: #f6f6f8;
+$khaki: #d6be76;
+$lgray: #ceced0;
+
+/* Global */
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+  background-color: $bgcolor;
+}
+
+/* Structure */
+
+.wrapper {
+  @include flexbox((
+    display: flex,
+    flex-direction: column,
+    align-items: center,
+    justify-content: flex-start
+  ));
+}
+
+.header {
+  @include flexbox((
+    flex: 0 0 auto,
+    display: flex,
+    flex-direction: column,
+    align-items: center,
+    justify-content: flex-start
+  ));
+  padding: 0 2em;
+}
+
+.mainmenu__wrapper {
+  @include flexbox((
+    flex: 1 0 auto,
+    display: flex,
+    flex-direction: row,
+    align-items: center,
+    justify-content: space-around
+  ));
+  width: 100%;
+  border-bottom: 1px solid $lgray;
+}
+
+.mainmenu__logo {
+  @include flexbox((
+    flex: 0 0 auto
+  ));
+  background-image: url(../img/addwine.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 189px;
+  height: 34px;
+}
+
+.mainmenu {
+  @include flexbox((
+    flex: 0 0 auto,
+    display: flex,
+    flex-direction: row,
+    align-items: center,
+    justify-content: flex-start
+  ));
+  margin: 1em;
+}
+
+.mainmenu__item {
+  @include flexbox((
+    flex: 0 0 auto
+  ));
+  padding: 1em;
+  margin-right: 1em;
+}
+
+.mainmenu__cart {
+  @include flexbox((
+    flex: 0 0 auto
+  ));
+}
+
+.contactinfo {
+  @include flexbox((
+    flex: 1 0 auto,
+    display: flex,
+    flex-direction: row,
+    align-items: center,
+    justify-content: space-between
+  ));
+  width: 100%;
+  padding: 1em;
+}
+
+.specialoffers {
+  border: 1px solid red;
+  width: 100%;
+  height: 10em;
+  @include flexbox((
+    flex: 0 0 auto,
+  ));
+}
+
+.featurehighlights {
+  @include flexbox((
+    flex: 1 0 auto,
+    display: flex,
+    flex-direction: row,
+    align-items: flex-start,
+    justify-content: space-between,
+    flex-wrap: wrap
+  ));
+    width: 100%;
+}
+
+.featurehighlights__item {
+  @include flexbox((
+    flex: 0 0 auto,
+    display: flex,
+    flex-direction: column,
+    justify-content: flex-start,
+    align-items: center
+  ));
+  width: 10em;
+  margin: 1em;
+}
+
+.featurehighlights__item__img {
+  @include flexbox((
+    flex: 0 0 auto
+  ));
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 10em;
+  margin: 1em;
+}
+
+.featurehighlights__item__img:after {
+  display: block;
+  content: "";
+  padding-bottom: 50%;
+}
+
+.feature1 {
+  background-image: url(../img/shield.jpg);
+}
+
+.feature2 {
+  background-image: url(../img/corkscrew.png);
+}
+
+.feature3 {
+  background-image: url(../img/bux.png);
+}
+
+.feature4 {
+  background-image: url(../img/person.png);
+}
+
+.feature5 {
+  background-image: url(../img/scroll.png);
+}
+
+.feature6 {
+  background-image: url(../img/delivery.png);
+}
+
+.featurehighlights__item__text {
+  @include flexbox((
+    flex: 0 0 auto
+  ));
+  text-align: center;
+}
+
+.catalogue {
+  width: 100%;
+  height: 10em;
+  @include flexbox((
+    flex: 0 0 auto,
+    display: flex,
+    align-items: center,
+    justify-content: flex-start,
+    flex-direction: column
+  ));
+}
+
+.catalogue__expand {
+  @include flexbox((
+    flex: 0 0 auto
+  ));
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  background-color: $khaki;
+  color: #FFFFFF;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.catalogue__popular {
+  @include flexbox((
+    flex: 0 0 auto
+  ));
+  border: 1px solid red;
+}
+
+.trivia {
+  @include flexbox((
+    flex: 1 0 auto,
+    display: flex,
+    flex-direction: column,
+    align-items: center,
+    justify-content: flex-start
+  ));
+  padding: 2em;
+}
+
+.trivia__wrapper {
+  @include flexbox((
+    flex: 0 1 auto,
+    display: flex,
+    flex-direction: column,
+    align-items: flex-start,
+    justify-content: flex-start
+  ));
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.trivia__item {
+  @include flexbox((
+    flex: 0 1 auto,
+  ));
+  width: 100%;
+  padding: 1.5em 2em;
+  background-color: #FFFFFF;
+}
+
+.trivia__header {
+  color: $khaki;
+  width: 100%;
+  border-bottom: 1px solid $lgray;
+  font-weight: bold;
+  font-style: italic;
+  background-color: #FFFFFF;
+}
+
+.trivia__summary {
+  margin-top: 1.5em;
+}
+
+.brands {
+  @include flexbox((
+    flex: 0 1 auto
+  ));
+  border: 1px solid green;
+  width: 100%;
+  height: 10em;
+}
+
+.auxillary {
+  @include flexbox((
+    flex: 0 1 auto
+  ));
+  border: 1px solid green;
+  width: 100%;
+  height: 20em;
+}
+
+.footer {
+  @include flexbox((
+    flex: 0 1 auto,
+    display: flex,
+    flex-direction: column,
+    justify-content: flex-start
+  ));
+  width: 100%;
+  height: 10em;
+  background-color: #2f546f;
+}
+
+.footercontacts__wrapper {
+  @include flexbox((
+    flex: 0 1 auto,
+    display: flex,
+    flex-direction: row,
+    align-items: center,
+    justify-content: space-between
+  ));
+  height: 5em;
+  padding: 0 2em;
+}
+
+.footercontacts__logo {
+  @include flexbox((
+    flex: 0 0 auto
+  ));
+  background-image: url(../img/addwinedark.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 189px;
+  height: 34px;
+}
+
+.footercontacts__legal {
+  @include flexbox((
+    flex: 0 0 auto
+  ));
+  border: 1px solid blue;
+}
+
+.footercontacts__callback {
+  @include flexbox((
+    flex: 0 0 auto
+  ));
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: #FFFFFF;
+  border-radius: 5px;
+  border: 1px solid #FFFFFF;
+  text-transform: uppercase;
+}
+
+.footercontacts__social {
+  @include flexbox((
+    flex: 0 0 auto,
+    display: flex,
+    flex-direction: row,
+    justify-content: flex-start,
+    align-items: center
+  ));
+  border: 1px solid blue;
+  width: 18em;
+  text-align: right;
+}
+
+.footercontacts__social__icon {
+  @include flexbox((
+    flex: 0 0 auto,
+  ));
+  display: block;
+  width: 2.5em;
+  height: 2.5em;
+  margin-right: 1em;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.instagram {
+  background-image: url(../img/instawhite.svg);
+}
+
+.facebook {
+  background-image: url(../img/facewhite.svg);
+}
+
+.paymentncopy {
+  @include flexbox((
+    flex: 0 0 auto,
+    display: flex,
+    flex-direction: row,
+    align-items: center,
+    justify-content: space-between
+  ));
+  padding: 0 2em;
+}
+
+.designer {
+  width: 3em;
+}
+
+.payment__options {
+  @include flexbox((
+    flex: 1 0 auto,
+    display: flex,
+    flex-direction: row,
+    align-items: center,
+    justify-content: space-around
+  ));
+}
+
+.payment__options__item {
+  @include flexbox((
+    flex: 0 0 auto,
+  ));
+  width: 4em;
+  margin: 0.25em 0.5em;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.payment__options__item:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.master {
+  background-image: url(../img/mastercard.svg);
+}
+
+.mir {
+  background-image: url(../img/mir.svg);
+}
+
+.visa {
+  background-image: url(../img/visa.svg);
+}
+
+.samsung {
+  background-image: url(../img/samsung.svg);
+}
+
+.apple {
+  background-image: url(../img/apple.svg);
+}
+
+.copy {
+  @include flexbox((
+    flex: 0 0 auto,
+  ));
+  width: 16em;
+}

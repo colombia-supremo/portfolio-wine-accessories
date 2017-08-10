@@ -1,0 +1,570 @@
+/* line 5, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Global */
+/* line 10, ../scss/main.scss */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 15, ../scss/main.scss */
+html {
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+  background-color: #f6f6f8;
+}
+
+/* Structure */
+/* line 23, ../scss/main.scss */
+.wrapper {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* line 32, ../scss/main.scss */
+.header {
+  -webkit-flex: 0 0 auto;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-justify-content: flex-start;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 2em;
+}
+
+/* line 43, ../scss/main.scss */
+.mainmenu__wrapper {
+  -webkit-flex: 1 0 auto;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-justify-content: space-around;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  border-bottom: 1px solid #ceced0;
+}
+
+/* line 55, ../scss/main.scss */
+.mainmenu__logo {
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+  background-image: url(../img/addwine.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 189px;
+  height: 34px;
+}
+
+/* line 66, ../scss/main.scss */
+.mainmenu {
+  -webkit-flex: 0 0 auto;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-justify-content: flex-start;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1em;
+}
+
+/* line 77, ../scss/main.scss */
+.mainmenu__item {
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+  padding: 1em;
+  margin-right: 1em;
+}
+
+/* line 85, ../scss/main.scss */
+.mainmenu__cart {
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+/* line 91, ../scss/main.scss */
+.contactinfo {
+  -webkit-flex: 1 0 auto;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-justify-content: space-between;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1em;
+}
+
+/* line 103, ../scss/main.scss */
+.specialoffers {
+  border: 1px solid red;
+  width: 100%;
+  height: 10em;
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+/* line 112, ../scss/main.scss */
+.featurehighlights {
+  -webkit-flex: 1 0 auto;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* line 124, ../scss/main.scss */
+.featurehighlights__item {
+  -webkit-flex: 0 0 auto;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-justify-content: flex-start;
+  -webkit-align-items: center;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 10em;
+  margin: 1em;
+}
+
+/* line 136, ../scss/main.scss */
+.featurehighlights__item__img {
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 10em;
+  margin: 1em;
+}
+
+/* line 147, ../scss/main.scss */
+.featurehighlights__item__img:after {
+  display: block;
+  content: "";
+  padding-bottom: 50%;
+}
+
+/* line 153, ../scss/main.scss */
+.feature1 {
+  background-image: url(../img/shield.jpg);
+}
+
+/* line 157, ../scss/main.scss */
+.feature2 {
+  background-image: url(../img/corkscrew.png);
+}
+
+/* line 161, ../scss/main.scss */
+.feature3 {
+  background-image: url(../img/bux.png);
+}
+
+/* line 165, ../scss/main.scss */
+.feature4 {
+  background-image: url(../img/person.png);
+}
+
+/* line 169, ../scss/main.scss */
+.feature5 {
+  background-image: url(../img/scroll.png);
+}
+
+/* line 173, ../scss/main.scss */
+.feature6 {
+  background-image: url(../img/delivery.png);
+}
+
+/* line 177, ../scss/main.scss */
+.featurehighlights__item__text {
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+/* line 184, ../scss/main.scss */
+.catalogue {
+  width: 100%;
+  height: 10em;
+  -webkit-flex: 0 0 auto;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: flex-start;
+  -webkit-flex-direction: column;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+/* line 196, ../scss/main.scss */
+.catalogue__expand {
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  background-color: #d6be76;
+  color: #FFFFFF;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+/* line 209, ../scss/main.scss */
+.catalogue__popular {
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+  border: 1px solid red;
+}
+
+/* line 216, ../scss/main.scss */
+.trivia {
+  -webkit-flex: 1 0 auto;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-justify-content: flex-start;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2em;
+}
+
+/* line 227, ../scss/main.scss */
+.trivia__wrapper {
+  -webkit-flex: 0 1 auto;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-justify-content: flex-start;
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* line 239, ../scss/main.scss */
+.trivia__item {
+  -webkit-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 100%;
+  padding: 1.5em 2em;
+  background-color: #FFFFFF;
+}
+
+/* line 248, ../scss/main.scss */
+.trivia__header {
+  color: #d6be76;
+  width: 100%;
+  border-bottom: 1px solid #ceced0;
+  font-weight: bold;
+  font-style: italic;
+  background-color: #FFFFFF;
+}
+
+/* line 257, ../scss/main.scss */
+.trivia__summary {
+  margin-top: 1.5em;
+}
+
+/* line 261, ../scss/main.scss */
+.brands {
+  -webkit-flex: 0 1 auto;
+  flex: 0 1 auto;
+  border: 1px solid green;
+  width: 100%;
+  height: 10em;
+}
+
+/* line 270, ../scss/main.scss */
+.auxillary {
+  -webkit-flex: 0 1 auto;
+  flex: 0 1 auto;
+  border: 1px solid green;
+  width: 100%;
+  height: 20em;
+}
+
+/* line 279, ../scss/main.scss */
+.footer {
+  -webkit-flex: 0 1 auto;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-justify-content: flex-start;
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 10em;
+  background-color: #2f546f;
+}
+
+/* line 291, ../scss/main.scss */
+.footercontacts__wrapper {
+  -webkit-flex: 0 1 auto;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-justify-content: space-between;
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 5em;
+  padding: 0 2em;
+}
+
+/* line 303, ../scss/main.scss */
+.footercontacts__logo {
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+  background-image: url(../img/addwinedark.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 189px;
+  height: 34px;
+}
+
+/* line 314, ../scss/main.scss */
+.footercontacts__legal {
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+  border: 1px solid blue;
+}
+
+/* line 321, ../scss/main.scss */
+.footercontacts__callback {
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: #FFFFFF;
+  border-radius: 5px;
+  border: 1px solid #FFFFFF;
+  text-transform: uppercase;
+}
+
+/* line 334, ../scss/main.scss */
+.footercontacts__social {
+  -webkit-flex: 0 0 auto;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: flex-start;
+  -webkit-align-items: center;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid blue;
+  width: 18em;
+  text-align: right;
+}
+
+/* line 347, ../scss/main.scss */
+.footercontacts__social__icon {
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+  display: block;
+  width: 2.5em;
+  height: 2.5em;
+  margin-right: 1em;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+/* line 360, ../scss/main.scss */
+.instagram {
+  background-image: url(../img/instawhite.svg);
+}
+
+/* line 364, ../scss/main.scss */
+.facebook {
+  background-image: url(../img/facewhite.svg);
+}
+
+/* line 368, ../scss/main.scss */
+.paymentncopy {
+  -webkit-flex: 0 0 auto;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-justify-content: space-between;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2em;
+}
+
+/* line 379, ../scss/main.scss */
+.designer {
+  width: 3em;
+}
+
+/* line 383, ../scss/main.scss */
+.payment__options {
+  -webkit-flex: 1 0 auto;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-justify-content: space-around;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* line 393, ../scss/main.scss */
+.payment__options__item {
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: 4em;
+  margin: 0.25em 0.5em;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* line 404, ../scss/main.scss */
+.payment__options__item:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+/* line 410, ../scss/main.scss */
+.master {
+  background-image: url(../img/mastercard.svg);
+}
+
+/* line 414, ../scss/main.scss */
+.mir {
+  background-image: url(../img/mir.svg);
+}
+
+/* line 418, ../scss/main.scss */
+.visa {
+  background-image: url(../img/visa.svg);
+}
+
+/* line 422, ../scss/main.scss */
+.samsung {
+  background-image: url(../img/samsung.svg);
+}
+
+/* line 426, ../scss/main.scss */
+.apple {
+  background-image: url(../img/apple.svg);
+}
+
+/* line 430, ../scss/main.scss */
+.copy {
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: 16em;
+}
