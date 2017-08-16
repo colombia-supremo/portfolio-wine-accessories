@@ -7,13 +7,15 @@
 	<title>Add wine</title>
 	<link href="https://fonts.googleapis.com/css?family=Cuprum|Lobster&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" href="css/slickstyle.css">
 	<link rel="icon" type="image/x-icon" href="/favicon.ico"/>
 </head>
 <body>
   <header class="header">
 		<nav class="mainmenu__wrapper">
   	  <div class="mainmenu__logo">
-
+        ...просто добавь вина
   	  </div>
 			<ul class="mainmenu">
 				<li class="mainmenu__item">Каталог</li>
@@ -24,7 +26,8 @@
 				<li class="mainmenu__item">Контакты</li>
 			</ul>
 			<div class="mainmenu__cart">
-
+				<div class="mainmenu__cart__icon"></div>
+        <span class="simpleCart_quantity"></span>
 			</div>
 		</nav>
 		<div class="contactinfo">
@@ -38,9 +41,28 @@
 		</div>
   </header>
 
-  <section class="specialoffers">
-<!-- Slick entry point -->
+  <div class="specialoffers__wrapper">
+	<section class="specialoffers">
+		<div class="specialoffers__item specialoffers__item--1">
+			<div class="specialoffers__item__wrapper">
+				<div class="specialoffers__item__text">
+					30 дней бесплатного тест-драйва системы Coravin
+				</div>
+				<a href="#" class="specialoffers__item__link">Записаться на тест-драйв</a>
+			</div>
+		</div>
+		<div class="specialoffers__item specialoffers__item--2">
+      <div class="specialoffers__item__wrapper">
+				Слайд 2
+			</div>
+		</div>
+		<div class="specialoffers__item specialoffers__item--3">
+			<div class="specialoffers__item__wrapper">
+				Слайд 3
+			</div>
+		</div>
   </section>
+	</div>
 
   <section class="featurehighlights">
   	<div class="featurehighlights__item">
@@ -71,8 +93,68 @@
 
   <section class="catalogue">
     <a href="" class="catalogue__expand">Перейти в каталог товаров</a>
+		<div class="catalogue__popular__navigation">
+			<span class="stripe"></span>
+			<h2 class="catalogue__popular__header">Популярные Товары</h2>
+			<span class="stripe"></span>
+		</div>
+
 		<div class="catalogue__popular">
-<!-- Slick entry point -->
+
+			<div class="catalogue__popular__item">
+	      <div class="catalogue__popular__item__wrapper">
+					<div class="simpleCart_shelfItem">
+						<img src="img/aero.png" alt="" class="item_image">
+				    <h2 class="item_name">Аэратор для вина в акриловой упаковке фирмы HOST</h2>
+				    <span class="item_price"><i class="fa fa-rub" aria-hidden="true"></i> 20 394</span>
+					  <a class="item_add" href="javascript:;">В корзину</a>
+				  </div>
+				</div>
+			</div>
+
+			<div class="catalogue__popular__item">
+	      <div class="catalogue__popular__item__wrapper">
+					<div class="simpleCart_shelfItem">
+						<img src="img/aero.png" alt="" class="item_image">
+				    <h2 class="item_name">Аэратор для вина в акриловой упаковке фирмы HOST</h2>
+				    <span class="item_price"><i class="fa fa-rub" aria-hidden="true"></i> 20 394</span>
+					  <a class="item_add" href="javascript:;">В корзину</a>
+				  </div>
+				</div>
+			</div>
+
+			<div class="catalogue__popular__item">
+	      <div class="catalogue__popular__item__wrapper">
+					<div class="simpleCart_shelfItem">
+						<img src="img/aero.png" alt="" class="item_image">
+				    <h2 class="item_name">Аэратор для вина в акриловой упаковке фирмы HOST</h2>
+				    <span class="item_price"><i class="fa fa-rub" aria-hidden="true"></i> 20 394</span>
+					  <a class="item_add" href="javascript:;">В корзину</a>
+				  </div>
+				</div>
+			</div>
+
+			<div class="catalogue__popular__item">
+	      <div class="catalogue__popular__item__wrapper">
+					<div class="simpleCart_shelfItem">
+						<img src="img/aero.png" alt="" class="item_image">
+				    <h2 class="item_name">Аэратор для вина в акриловой упаковке фирмы HOST</h2>
+				    <span class="item_price"><i class="fa fa-rub" aria-hidden="true"></i> 20 394</span>
+					  <a class="item_add" href="javascript:;">В корзину</a>
+				  </div>
+				</div>
+			</div>
+
+			<div class="catalogue__popular__item">
+				<div class="catalogue__popular__item__wrapper">
+					<div class="simpleCart_shelfItem">
+						<img src="img/aero.png" alt="" class="item_image">
+						<h2 class="item_name">Аэратор для вина в акриловой упаковке фирмы HOST</h2>
+						<span class="item_price"><i class="fa fa-rub" aria-hidden="true"></i> 20 394</span>
+						<a class="item_add" href="javascript:;">В корзину</a>
+					</div>
+				</div>
+			</div>
 		</div>
   </section>
 
@@ -106,14 +188,100 @@
   </section>
 
   <section class="brands">
-<!-- Slick entry point -->
+		<div class="brands__navigation">
+			<span class="stripe"></span>
+			<h2 class="brands__header">Бренды Товаров</h2>
+			<span class="stripe"></span>
+		</div>
+
+		<div class="brands__slider">
+
+			<div class="brands__slider__item">
+	      <div class="brands__slider__item__wrapper">
+          слайд 1
+				</div>
+			</div>
+
+			<div class="brands__slider__item">
+	      <div class="brands__slider__item__wrapper">
+          слайд 2
+				</div>
+			</div>
+
+			<div class="brands__slider__item">
+	      <div class="brands__slider__item__wrapper">
+          слайд 3
+				</div>
+			</div>
+
+			<div class="brands__slider__item">
+	      <div class="brands__slider__item__wrapper">
+          слайд 4
+				</div>
+			</div>
+
+			<div class="brands__slider__item">
+				<div class="brands__slider__item__wrapper">
+          слайд 5
+				</div>
+			</div>
+			<div class="brands__slider__item">
+				<div class="brands__slider__item__wrapper">
+          слайд 6
+				</div>
+			</div>
+			<div class="brands__slider__item">
+				<div class="brands__slider__item__wrapper">
+          слайд 7
+				</div>
+			</div>
+
+		</div>
   </section>
 
   <section class="auxillary">
-    <div class="auxillary__catalogue"></div>
-    <div class="auxillary__materials"></div>
-    <div class="auxillary__subscribe"></div>
+    <div class="auxillary__catalogue">
+			<h2 class="auxillary__header">Каталог</h2>
+			<div class="auxillary__catalogue__wrapper">
+				<ul class="auxillary__catalogue__list">
+	    		<li class="auxillary__catalogue__list__item">Italesse</li>
+	    		<li class="auxillary__catalogue__list__item">Zalto</li>
+	    		<li class="auxillary__catalogue__list__item">Аргон для вина</li>
+	    		<li class="auxillary__catalogue__list__item">Бокалы для вина</li>
+	    		<li class="auxillary__catalogue__list__item">Бокалы для пива</li>
+	    		<li class="auxillary__catalogue__list__item">Бокалы для шампанского</li>
+	      </ul>
+				<ul class="auxillary__catalogue__list">
+	    		<li class="auxillary__catalogue__list__item">Винные шкафы</li>
+	    		<li class="auxillary__catalogue__list__item">Винные холодильники</li>
+	    		<li class="auxillary__catalogue__list__item">Дегустационные бокалы</li>
+	    		<li class="auxillary__catalogue__list__item">Декантеры</li>
+	    		<li class="auxillary__catalogue__list__item">Наборы</li>
+	    		<li class="auxillary__catalogue__list__item">Упаковки для вина</li>
+	    	</ul>
+			</div>
+    </div>
+    <div class="auxillary__materials">
+    	<h2 class="auxillary__header">Материалы</h2>
+			<ul>
+				<li>Доставка и оплата</li>
+				<li>Статьи</li>
+				<li>Вопрос-ответ</li>
+				<li>Контакты</li>
+			</ul>
+    </div>
+    <div class="auxillary__subscribe">
+    	<h2 class="auxillary__header">Оставьте свой мейл и узнайте</h2>
+			<p class="auxillary__subscribe__textblock">10 важных мероприятий на<br> которых обязательно нужно<br> дарить бутылку вина</p>
+			<input type="text" value="Введите свой e-mail адрес" class="auxillary__subscribe__input">
+			<input type="submit" value="ОТПРАВИТЬ" class="auxillary__subscribe__submit">
+			<p class="auxillary__subscribe__policyhint">Нажатием на кнопку "Отправить" я даю своё согласие<br> на обработку персональных данных.</p>
+    </div>
   </section>
+
+	<div class="simpleCart_items"></div>
+
+	<a href="javascript:;" class="simpleCart_checkout">Чекаут</a>
 
   <footer class="footer">
     <div class="footercontacts__wrapper">
@@ -134,9 +302,9 @@
 			</div>
     </div>
 		<div class="paymentncopy">
-			<div>
-				<img src="img/toltol.jpg" alt="" class="designer"><br>Made by TolTol Studio
-			</div>
+			<a href="#" class="designer__logo">
+			</a>
+			<div class="designer__name">Design by <br> TolTol Studio</div>
 			<ul class="payment__options">
 				<li class="payment__options__item master"></li>
 				<li class="payment__options__item mir"></li>
@@ -149,5 +317,53 @@
 			<br>&copy; AddWine 2017</div>
 		  </div>
   </footer>
+	<script src="https://use.fontawesome.com/a94f2d9b54.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		$('.specialoffers').slick({
+			dots: true,
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			useTransform: false,
+			draggable: true,
+			mobileFirst: true,
+			swipe: true,
+			appendDots: $(".specialoffers__wrapper"),
+			appendArrows: $(".specialoffers__wrapper")
+    });
+		$('.catalogue__popular').slick({
+			infinite: true,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			useTransform: false,
+			draggable: true,
+			mobileFirst: true,
+			swipe: true,
+			appendArrows: $(".catalogue__popular__navigation")
+    });
+		$('.brands__slider').slick({
+			infinite: true,
+			slidesToShow: 6,
+			slidesToScroll: 2,
+			useTransform: false,
+			draggable: true,
+			mobileFirst: true,
+			swipe: true,
+			appendArrows: $(".brands__navigation")
+    });
+	});
+	</script>
+	<script src="simpleCart.js"></script>
+	<script>
+		simpleCart({
+			checkout: {
+				type: "PayPal" ,
+				email: "you@yours.com"
+			}
+		});
+	</script>
 </body>
 </html>

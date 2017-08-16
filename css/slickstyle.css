@@ -1,0 +1,153 @@
+/* Slick Slider
+ * --------------------------------------- */
+
+/* Navigation containers and positioning
+ * --------------------------------------- */
+
+.slick-list
+{
+    height: 100%;
+}
+
+.slick-track
+{
+    height: 100%;
+}
+
+.slick-prev
+{
+    position: absolute;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slick-next
+{
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slick-dots
+{
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: center;
+    height: 2rem;
+    list-style: none;
+    position: absolute;
+    bottom: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+.slick-dots li
+{
+    flex: 0 1 auto;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0rem;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Button styling
+ * --------------------------------------- */
+
+.slick-prev,
+.slick-next,
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 2rem;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    color: transparent;
+    outline: none;
+    background: transparent;
+    z-index: 1000;
+}
+
+.slick-dots li button
+{
+    position: relative;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus,
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+
+/* Button symbols
+ * --------------------------------------- */
+
+.slick-prev:before,
+.slick-next:before,
+.slick-dots li button:before
+{
+    font-family: 'FontAwesome';
+    line-height: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 2rem;
+}
+
+.slick-dots li button:before {
+    font-size: 1rem;
+}
+
+.slick-prev:before
+{
+    opacity: 1;
+    content: "\f053";
+}
+
+.slick-next:before
+{
+    opacity: 1;
+    content: "\f054";
+}
+
+.slick-dots li button:before
+{
+    opacity: .65;
+    content: "\f111";
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+    content: "\f111";
+    color: #d6be76;
+}
+
+.slick-dots li.slick-active button:before
+{
+    opacity: 1;
+    content: "\f111";
+    color: #d6be76;
+}
