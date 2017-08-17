@@ -18,21 +18,21 @@
         ...просто добавь вина
   	  </div>
 			<ul class="mainmenu">
-				<li class="mainmenu__item">Каталог</li>
-				<li class="mainmenu__item">Доставка и оплата</li>
-				<li class="mainmenu__item">О компании</li>
-				<li class="mainmenu__item">Статьи</li>
-				<li class="mainmenu__item">Вопрос-ответ</li>
-				<li class="mainmenu__item">Контакты</li>
+				<li class="mainmenu__item"><a class="mainmenu__item__link" href="#">Каталог</a></li>
+				<li class="mainmenu__item"><a class="mainmenu__item__link" href="#">Доставка и оплата</a></li>
+				<li class="mainmenu__item"><a class="mainmenu__item__link" href="#">О компании</a></li>
+				<li class="mainmenu__item"><a class="mainmenu__item__link" href="#">Статьи</a></li>
+				<li class="mainmenu__item"><a class="mainmenu__item__link" href="#">Вопрос-ответ</a></li>
+				<li class="mainmenu__item"><a class="mainmenu__item__link" href="#">Контакты</a></li>
 			</ul>
 			<div class="mainmenu__cart">
-				<div class="mainmenu__cart__icon"></div>
+				<a href="javascript:void(0);" class="mainmenu__cart__icon" onclick="cartview()"></a>
         <span class="simpleCart_quantity"></span>
 			</div>
 		</nav>
 		<div class="contactinfo">
 			<div class="contactinfo__timeopen">
-				Время работы: пн-пт 9<sup>00</sup>-15<sup>00</sup>
+				Время работы: пн-пт 9<sup>00</sup> &ndash; 15<sup>00</sup>
 			</div>
 			<div class="contactinfo__phonenumber">
 				+7 495 9739068
@@ -244,30 +244,30 @@
 			<h2 class="auxillary__header">Каталог</h2>
 			<div class="auxillary__catalogue__wrapper">
 				<ul class="auxillary__catalogue__list">
-	    		<li class="auxillary__catalogue__list__item">Italesse</li>
-	    		<li class="auxillary__catalogue__list__item">Zalto</li>
-	    		<li class="auxillary__catalogue__list__item">Аргон для вина</li>
-	    		<li class="auxillary__catalogue__list__item">Бокалы для вина</li>
-	    		<li class="auxillary__catalogue__list__item">Бокалы для пива</li>
-	    		<li class="auxillary__catalogue__list__item">Бокалы для шампанского</li>
+	    		<li class="auxillary__catalogue__list__item"><a class="auxillary__catalogue__list__item__link" href="#">Italesse</a></li>
+	    		<li class="auxillary__catalogue__list__item"><a class="auxillary__catalogue__list__item__link" href="#">Zalto</a></li>
+	    		<li class="auxillary__catalogue__list__item"><a class="auxillary__catalogue__list__item__link" href="#">Аргон для вина</a></li>
+	    		<li class="auxillary__catalogue__list__item"><a class="auxillary__catalogue__list__item__link" href="#">Бокалы для вина</a></li>
+	    		<li class="auxillary__catalogue__list__item"><a class="auxillary__catalogue__list__item__link" href="#">Бокалы для пива</a></li>
+	    		<li class="auxillary__catalogue__list__item"><a class="auxillary__catalogue__list__item__link" href="#">Бокалы для шампанского</a></li>
 	      </ul>
 				<ul class="auxillary__catalogue__list">
-	    		<li class="auxillary__catalogue__list__item">Винные шкафы</li>
-	    		<li class="auxillary__catalogue__list__item">Винные холодильники</li>
-	    		<li class="auxillary__catalogue__list__item">Дегустационные бокалы</li>
-	    		<li class="auxillary__catalogue__list__item">Декантеры</li>
-	    		<li class="auxillary__catalogue__list__item">Наборы</li>
-	    		<li class="auxillary__catalogue__list__item">Упаковки для вина</li>
+	    		<li class="auxillary__catalogue__list__item"><a class="auxillary__catalogue__list__item__link" href="#">Винные шкафы</a></li>
+	    		<li class="auxillary__catalogue__list__item"><a class="auxillary__catalogue__list__item__link" href="#">Винные холодильники</a></li>
+	    		<li class="auxillary__catalogue__list__item"><a class="auxillary__catalogue__list__item__link" href="#">Дегустационные бокалы</a></li>
+	    		<li class="auxillary__catalogue__list__item"><a class="auxillary__catalogue__list__item__link" href="#">Декантеры</a></li>
+	    		<li class="auxillary__catalogue__list__item"><a class="auxillary__catalogue__list__item__link" href="#">Наборы</a></li>
+	    		<li class="auxillary__catalogue__list__item"><a class="auxillary__catalogue__list__item__link" href="#">Упаковки для вина</a></li>
 	    	</ul>
 			</div>
     </div>
     <div class="auxillary__materials">
     	<h2 class="auxillary__header">Материалы</h2>
-			<ul>
-				<li>Доставка и оплата</li>
-				<li>Статьи</li>
-				<li>Вопрос-ответ</li>
-				<li>Контакты</li>
+			<ul class="auxillary__materials__list">
+				<li class="auxillary__materials__list__item"><a class="auxillary__materials__list__item__link" href="#">Доставка и оплата</a></li>
+				<li class="auxillary__materials__list__item"><a class="auxillary__materials__list__item__link" href="#">Статьи</a></li>
+				<li class="auxillary__materials__list__item"><a class="auxillary__materials__list__item__link" href="#">Вопрос-ответ</a></li>
+				<li class="auxillary__materials__list__item"><a class="auxillary__materials__list__item__link" href="#">Контакты</a></li>
 			</ul>
     </div>
     <div class="auxillary__subscribe">
@@ -279,9 +279,10 @@
     </div>
   </section>
 
-	<div class="simpleCart_items"></div>
-
-	<a href="javascript:;" class="simpleCart_checkout">Чекаут</a>
+  <div id="cart" class="cart__wrapper">
+		<div class="simpleCart_items"></div>
+		<a href="javascript:;" class="simpleCart_checkout">Оформить заказ</a>
+  </div>
 
   <footer class="footer">
     <div class="footercontacts__wrapper">
@@ -295,14 +296,14 @@
 				Заказать обратный звонок
 			</a>
 			<div class="footercontacts__social">
-				<a class="footercontacts__social__icon instagram"></a>
-				<a class="footercontacts__social__icon facebook"></a>
+				<a href="#" class="footercontacts__social__icon instagram"></a>
+				<a href="#" class="footercontacts__social__icon facebook"></a>
         +7 495 9739068 <br>
 				info@addwine.ru
 			</div>
     </div>
 		<div class="paymentncopy">
-			<a href="#" class="designer__logo">
+			<a href="https://www.facebook.com/toltolstudio/" class="designer__logo">
 			</a>
 			<div class="designer__name">Design by <br> TolTol Studio</div>
 			<ul class="payment__options">
@@ -320,7 +321,22 @@
 	<script src="https://use.fontawesome.com/a94f2d9b54.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script src="simpleCart.js"></script>
 	<script>
+	simpleCart({
+		checkout: {
+			type: "PayPal" ,
+			email: "you@yours.com"
+		}
+	});
+	function cartview() {
+	  var x = document.getElementById("cart");
+	  if (x.className === "cart__wrapper") {
+		  x.className += " cart__expanded";
+	  } else {
+		  x.className = "cart__wrapper";
+	  }
+  }
 	$(document).ready(function() {
 		$('.specialoffers').slick({
 			dots: true,
@@ -355,15 +371,6 @@
 			appendArrows: $(".brands__navigation")
     });
 	});
-	</script>
-	<script src="simpleCart.js"></script>
-	<script>
-		simpleCart({
-			checkout: {
-				type: "PayPal" ,
-				email: "you@yours.com"
-			}
-		});
 	</script>
 </body>
 </html>

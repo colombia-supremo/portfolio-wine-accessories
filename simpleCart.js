@@ -62,7 +62,7 @@
 
 				// Currencies
 				currencies = {
-					"RUB": { code: "RUB", symbol: "&f158;", name: "Russian Rouble" },
+					"RUB": { code: "RUB", symbol: "\u20bd", name: "Russian Ruble" },
 					"USD": { code: "USD", symbol: "&#36;", name: "US Dollar" },
 					"AUD": { code: "AUD", symbol: "&#36;", name: "Australian Dollar" },
 					"BRL": { code: "BRL", symbol: "R&#36;", name: "Brazilian Real" },
@@ -89,18 +89,18 @@
 				// default options
 				settings = {
 					checkout				: { type: "PayPal", email: "you@yours.com" },
-					currency				: "USD",
-					language				: "english-us",
+					currency				: "RUB",
+					language				: "russian-ru",
 
 					cartStyle				: "div",
 					cartColumns			: [
-						{ attr: "name", label: "Name" },
-						{ attr: "price", label: "Price", view: 'currency' },
+						{ attr: "name", label: "Наименование" },
+						{ attr: "price", label: "Цена", view: 'currency' },
 						{ view: "decrement", label: false },
-						{ attr: "quantity", label: "Qty" },
+						{ attr: "quantity", label: "Количество" },
 						{ view: "increment", label: false },
-						{ attr: "total", label: "SubTotal", view: 'currency' },
-						{ view: "remove", text: "Remove", label: false }
+						{ attr: "total", label: "Сумма", view: 'currency' },
+						{ view: "remove", text: "&#128465;", label: false }
 					],
 
 					excludeFromCheckout	: ['thumb'],
@@ -577,7 +577,7 @@
 				},
 
 				decrement: function (item, column) {
-					return "<a href='javascript:;' class='" + namespace + "_decrement'>" + (column.text || "-") + "</a>";
+					return "<a href='javascript:;' class='" + namespace + "_decrement'>" + (column.text || "&ndash;") + "</a>";
 				},
 
 				increment: function (item, column) {
