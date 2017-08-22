@@ -8,7 +8,8 @@ $dgray: #999999;
 $bgray: #a5b3bc;
 $navy: #305572;
 
-/* Global */
+/* Global
+ * --------------------------------------- */
 
 * {
   -webkit-box-sizing: border-box;
@@ -28,8 +29,6 @@ sup {
   text-decoration: underline;
 }
 
-/* Structure */
-
 .wrapper {
   @include flexbox((
     display: flex,
@@ -39,6 +38,9 @@ sup {
   ));
   width: 100%;
 }
+
+/* Header
+ * --------------------------------------- */
 
 .header {
   @include flexbox((
@@ -57,7 +59,8 @@ sup {
     display: flex,
     flex-direction: row,
     align-items: center,
-    justify-content: space-around
+    justify-content: space-around,
+    flex-wrap: wrap
   ));
   width: 100%;
   border-bottom: 1px solid $lgray;
@@ -75,6 +78,7 @@ sup {
   background-repeat: no-repeat;
   width: 189px;
   height: 50px;
+  margin-top: 5px;
   font-size: 0.9em;
 }
 
@@ -138,6 +142,10 @@ sup {
   display: block;
   padding-bottom: 100%;
 }
+
+
+/* Cart
+ * --------------------------------------- */
 
 .simpleCart_items {
   @include flexbox((
@@ -333,21 +341,36 @@ sup {
   color: #FFFFFF;
 }
 
+
+/* Header contact info
+ * --------------------------------------- */
+
 .contactinfo {
   @include flexbox((
     flex: 1 0 auto,
     display: flex,
     flex-direction: row,
     align-items: center,
-    justify-content: space-between
+    justify-content: space-between,
+    flex-wrap: wrap
   ));
   width: 100%;
   padding: 1em;
 }
 
+.contactinfo__timeopen,
+.contactinfo__phonenumber {
+  @include flexbox((
+    flex: 0 0 auto
+  ));
+}
+
 .contactinfo__orderacall {
   color: $navy;
 }
+
+/* Special offers slider
+ * --------------------------------------- */
 
 .specialoffers__wrapper {
   @include flexbox((
@@ -395,6 +418,7 @@ sup {
   text-transform: uppercase;
   font-weight: bold;
   padding: 1em;
+  text-align: center;
 }
 
 .specialoffers__item__link {
@@ -412,16 +436,19 @@ sup {
 }
 
 .specialoffers__item--1 {
-  background-image: url(../img/coravin.jpg);
+  background-image: url(../img/gallery.jpg);
 }
 
 .specialoffers__item--2 {
-  background-image: url(../img/night.jpg);
+  background-image: url(../img/gallery.jpg);
 }
 
 .specialoffers__item--3 {
-  background-image: url(../img/80.jpeg);
+  background-image: url(../img/gallery.jpg);
 }
+
+/* Advantages display
+ * --------------------------------------- */
 
 .featurehighlights {
   @include flexbox((
@@ -495,6 +522,9 @@ sup {
   text-align: center;
   color: $dgray;
 }
+
+/*Popular catalogue items
+ * --------------------------------------- */
 
 .catalogue {
   width: 100%;
@@ -613,6 +643,17 @@ sup {
   @include flexbox((
   flex: 0 1 auto,
   ));
+  background-image: url(../img/placeholder.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+
+.item_image:after {
+  display: block;
+  content: "";
+  padding-bottom: 100%;
 }
 
 .item_name {
@@ -628,6 +669,9 @@ sup {
   ));
   margin: 0 0 1em 0;
 }
+
+/* Flavor text
+ * --------------------------------------- */
 
 .trivia {
   @include flexbox((
@@ -674,6 +718,9 @@ sup {
 .trivia__summary {
   margin-top: 1.5em;
 }
+
+/* Brands display
+ * --------------------------------------- */
 
 .brands {
   @include flexbox((
@@ -751,6 +798,9 @@ sup {
   content: "";
   padding-bottom: 100%;
 }
+
+/* Additional menu groups
+ * --------------------------------------- */
 
 .auxillary {
   @include flexbox((
@@ -841,6 +891,9 @@ sup {
   color: $navy;
 }
 
+/* Subscription form
+ * --------------------------------------- */
+
 .auxillary__subscribe {
   @include flexbox((
     flex: 0 0 auto,
@@ -911,6 +964,9 @@ sup {
   margin: 0.5em 0 2em 0;
 }
 
+/* Footer
+ * --------------------------------------- */
+
 .footer {
   @include flexbox((
     flex: 0 1 auto,
@@ -945,7 +1001,7 @@ sup {
   background-size: auto;
   width: 139px;
   height: 34px;
-  margin: 0 1.5em 0 0;
+  margin: 1em 1.5em 0 0;
 }
 
 .footercontacts__legal {
@@ -1112,6 +1168,15 @@ sup {
   font-size: 0.7em;
 }
 
+/* Adapting for mobile
+ * --------------------------------------- */
+
+@media screen and (max-width: 500px) {
+  .specialoffers__wrapper {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .catalogue__popular,
   .catalogue__popular__navigation,
@@ -1121,7 +1186,6 @@ sup {
   .payment__options,
   .mainmenu__cart {
     display: none;
-
   }
 
   .auxillary {
